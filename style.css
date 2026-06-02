@@ -1,0 +1,79 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background:#f4f4f4;
+    color:#111;
+}
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:24px;
+    padding:0 24px;
+    background:#0b0b0f;
+    color:#fff;
+    min-height:60px;
+    box-shadow:0 2px 14px rgba(0, 0, 0, 0.2);
+}
+.nav-brand{
+    font-size:24px;
+    font-weight:700;
+    letter-spacing:0.08em;
+  padding-left:120px;
+    font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+
+.nav-list{
+    display:flex;
+    list-style:none;
+}
+.nav-item{
+    padding:15px;
+}
+.nav-link{
+    color:#fff;
+    text-decoration:none;
+    font-weight:500;
+    transition:color 0.2s ease, transform 0.2s ease;
+    
+font-size:14px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.nav-link-1{
+    padding-right:140px;
+       color:#fff;
+    text-decoration:none;
+    font-weight:500;
+    transition:color 0.2s ease, transform 0.2s ease;
+    font-size:14px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+    
+}
+
+.nav-link:hover{
+    color:#61dafb;
+    transform:translateY(-1px);
+}
+@media (max-width: 640px) {
+    .navbar{
+        flex-direction:column;
+        align-items:flex-start;
+        padding:16px;
+    }
+    .nav-list{
+        flex-wrap:wrap;
+        gap:16px;
+    }
+}
